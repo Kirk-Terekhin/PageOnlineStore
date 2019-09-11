@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/sass.css">
+    <link rel="stylesheet" href="./bower/normalize-css/normalize.css">
+    <link rel="icon" href="./pic/favicon.ico" type="image/x-icon">
+    <title>Интернет магазин</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <ul class="social">
+              <li class="social__item"><a href="#" target="_blank" class="social__link_fb social__link"> fb</a></li>
+              <li class="social__item"><a href="https://vk.com/ragnarokmetal" target="_blank" class="social__link_vk social__link"> vk</a></li>
+              <li class="social__item"><a href="#" target="_blank" class="social__link_tw social__link"> tw</a></li>
+            </ul>
+            <div class="top-info">
+              <div class="adres">ул.Маяковская 6, офис 17</div><a href="tel:+79211231213" class="number">+7 (921) 123-12-13</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <h1 class="logo"><a href="#" class="logo__link"><img src="pic/cooltech.png" alt="Логотип" class="logo__img"></a></h1>
+            <form action="#" class="search">
+              <input type="text" placeholder="Что будем искать?" class="search__input">
+              <button type="submit" class="search__submit">Найти</button>
+            </form>
+            <ul class="mini-menu">
+              <li class="mini-menu__item"><a href="#" class="mini-menu__link">Карта проезда</a></li>
+              <li class="mini-menu__item"><a href="#" class="mini-menu__link">История заказов</a></li>
+              <li class="mini-menu__item"><a href="#" class="mini-menu__link">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link ">Планшеты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link active ">Мобильные телефоны</a></li>
+            <li class="nav__item"><a href="#" class="nav__link ">Мр3 плееры</a></li>
+            <li class="nav__item"><a href="#" class="nav__link ">Персональные компьютеры</a></li>
+            <li class="nav__item"><a href="#" class="nav__link ">Ноутбуки</a></li>
+            <li class="nav__item"><a href="#" class="nav__link ">Аксессуары</a></li>
+            <li class="nav__item"><a href="#" class="nav__link ">Бытовая техника      </a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="container clearfix">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item "><a href="#" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item active "><a href="#" class="breadcrumbs__link">Каталог</a></li>
+            </ul>
+          </div>
+          <h3 class="content__title">Мобильные телефоны</h3>
+          <aside class="aside">
+            <ul class="category">
+              <li class="category__item "><a href="#" class="category__link">Флагманы</a></li>
+              <li class="category__item active "><a href="#" class="category__link">Бюджетная линейка</a></li>
+            </ul>
+            <ul id="accordion" class="accordion">
+              <li class="accordion__item in-shop"><a href="#" class="accordion__link">Наличие в магазинах</a>
+                <div class="accordion__collapse">
+                  <ul class="in-shop__list">
+                    <li class="in-shop__item">
+                      <label class="in-shop__label">
+                        <input type="radio" name="collape" class="in-shop__radio"><span class="in-shop__check_fake">fake</span>Во всех магазинах
+                      </label>
+                    </li>
+                    <li class="in-shop__item">
+                      <label class="in-shop__label">
+                        <input type="radio" name="collape" class="in-shop__radio"><span class="in-shop__check_fake">fake</span>В ближайшем ко мне магазине
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion__item brand"><a href="#" class="accordion__link">Бренды</a>
+                <div class="accordion__collapse">
+                  <ul class="brand__list">
+                    <li class="brand__item">
+                      <label class="brand__label">
+                        <input type="checkbox" class="brand__check"><span class="brand__check_fake">fake</span>Lenovo
+                      </label>
+                    </li>
+                    <li class="brand__item">
+                      <label class="brand__label">
+                        <input type="checkbox" class="brand__check"><span class="brand__check_fake">fake</span>Apple
+                      </label>
+                    </li>
+                    <li class="brand__item">
+                      <label class="brand__label">
+                        <input type="checkbox" class="brand__check"><span class="brand__check_fake">fake</span>Nokia
+                      </label>
+                    </li>
+                    <li class="brand__item">
+                      <label class="brand__label">
+                        <input type="checkbox" class="brand__check"><span class="brand__check_fake">fake</span>Asus
+                      </label>
+                    </li>
+                    <li class="brand__item">
+                      <label class="brand__label">
+                        <input type="checkbox" class="brand__check"><span class="brand__check_fake">fake</span>Sumsung
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="brand__reset">Сбросить фильтр</div>
+                </div>
+              </li>
+              <li class="accordion__item price-filter"><a href="#" class="accordion__link">Цена</a>
+                <div class="accordion__collapse clearfix">
+                  <label class="price-filter__label price-filter__label_from">от
+                    <input type="text" id="amount__one" class="price-filter__input">
+                  </label>
+                  <label class="price-filter__label price-filter__label_to">до
+                    <input type="text" id="amount__two" class="price-filter__input">
+                  </label>
+                  <div id="slider-range"></div>
+                </div>
+              </li>
+              <li class="accordion__item color"><a href="#" class="accordion__link">Цвет</a>
+                <div class="accordion__collapse">
+                  <ul class="color__list">
+                    <li class="color__item">
+                      <input type="checkbox" id="check0" class="color__check">
+                      <label for="check0" style="background-color:#fff" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check1" class="color__check">
+                      <label for="check1" style="background-color:#cccccc" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check2" class="color__check">
+                      <label for="check2" style="background-color:#000" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check3" class="color__check">
+                      <label for="check3" style="background-color:#0a3153" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check4" class="color__check">
+                      <label for="check4" style="background-color:#ff1800" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check5" class="color__check">
+                      <label for="check5" style="background-color:#fff343" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check6" class="color__check">
+                      <label for="check6" style="background-color:#fb914a" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check7" class="color__check">
+                      <label for="check7" style="background-color:#92c37c" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check8" class="color__check">
+                      <label for="check8" style="background-color:#40a6ff" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check9" class="color__check">
+                      <label for="check9" style="background-color:#9870ad" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check10" class="color__check">
+                      <label for="check10" style="background-color:#dc78ad" class="color__label"></label>
+                    </li>
+                    <li class="color__item">
+                      <input type="checkbox" id="check11" class="color__check">
+                      <label for="check11" style="background-color:#7f401d" class="color__label"></label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion__item OS"><a href="#" class="accordion__link">Операционные системы</a>
+                <div class="accordion__collapse">
+                  <ul class="OS__list">
+                    <li class="OS__item">
+                      <label class="OS__label">
+                        <input type="checkbox" class="OS__check"><span class="OS__check_fake">fake</span>Android
+                      </label>
+                    </li>
+                    <li class="OS__item">
+                      <label class="OS__label">
+                        <input type="checkbox" class="OS__check"><span class="OS__check_fake">fake</span>iOS
+                      </label>
+                    </li>
+                    <li class="OS__item">
+                      <label class="OS__label">
+                        <input type="checkbox" class="OS__check"><span class="OS__check_fake">fake</span>Symbian
+                      </label>
+                    </li>
+                    <li class="OS__item">
+                      <label class="OS__label">
+                        <input type="checkbox" class="OS__check"><span class="OS__check_fake">fake</span>Windows Phone
+                      </label>
+                    </li>
+                    <li class="OS__item">
+                      <label class="OS__label">
+                        <input type="checkbox" class="OS__check"><span class="OS__check_fake">fake</span>Custom
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="OS__reset">Сбросить фильтр</div>
+                </div>
+              </li>
+            </ul>
+          </aside>
+          <section class="section">
+            <div class="sort clearfix">
+              <div class="sort__select-container">
+                <div class="sort__select_text">Сортировать по
+                  <select class="sort__select">
+                    <option class="sort__select_option-price sort__select_option">по цене</option>
+                    <option class="sort__select_option-viewed sort__select_option">по популярности</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sort__view">
+                <div class="sort__view_text">Вид каталога
+                  <ul class="sort__view_list">
+                    <li class="sort__view_item-list sort__view_item">list</li>
+                    <li class="sort__view_item-grid sort__view_item">grid</li>
+                    <li class="sort__view_item-line sort__view_item">line</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <ul id="product" class="product__grid">
+                <li class="product__item clearfix">
+                  <div class="left_column">
+                    <div class="product__slider">
+                      <div class="product__slider_img"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="product__slider_image"></div>
+                      <div class="product__slider_thumbnail clearfix">
+                        <ul class="slider__thumbnail_list">
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_1.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_2.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_2.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_3.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_3.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__vendor">Артикул<span class="product__vendor_number">123456</span></div>
+                  </div>
+                  <div class="product__desc">
+                    <div class="product__desc_title">Nokia Lumia 930</div>
+                    <ul class="product__desc_text">
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Тип SIM-карты</div>
+                        <div class="product__desc_right">Micro-SIM</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Количество SIM-карт</div>
+                        <div class="product__desc_right">2</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Цвет Черный</div>
+                        <div class="product__desc_right">Черный</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">ОC </div>
+                        <div class="product__desc_right">Windows Phone</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Связь 3G</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">4G (LTE)</div>
+                        <div class="product__desc_right">Нет</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">GPS-модуль</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                    </ul>
+                    <ul class="product__desc_rating">
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item"></li>
+                    </ul><span class="product__desc_rating_number">4</span>
+                  </div>
+                  <div class="product__price">
+                    <div class="product__price_price">24 000<span class="rub">m</span></div>
+                    <div class="product__price_shop">
+                      <button class="button__shop">В корзину</button>
+                      <div class="in_stock">В наличии</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item clearfix">
+                  <div class="left_column">
+                    <div class="product__slider">
+                      <div class="product__slider_img"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="product__slider_image"></div>
+                      <div class="product__slider_thumbnail clearfix">
+                        <ul class="slider__thumbnail_list">
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_1.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_2.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_2.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_3.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_3.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__vendor">Артикул<span class="product__vendor_number">123456</span></div>
+                  </div>
+                  <div class="product__desc">
+                    <div class="product__desc_title">Nokia Lumia 930</div>
+                    <ul class="product__desc_text">
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Тип SIM-карты</div>
+                        <div class="product__desc_right">Micro-SIM</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Количество SIM-карт</div>
+                        <div class="product__desc_right">2</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Цвет Черный</div>
+                        <div class="product__desc_right">Черный</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">ОC </div>
+                        <div class="product__desc_right">Windows Phone</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Связь 3G</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">4G (LTE)</div>
+                        <div class="product__desc_right">Нет</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">GPS-модуль</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                    </ul>
+                    <ul class="product__desc_rating">
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item"></li>
+                    </ul><span class="product__desc_rating_number">4</span>
+                  </div>
+                  <div class="product__price">
+                    <div class="product__price_price">24 000<span class="rub">m</span></div>
+                    <div class="product__price_shop">
+                      <button class="button__shop">В корзину</button>
+                      <div class="in_stock">В наличии</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item clearfix">
+                  <div class="left_column">
+                    <div class="product__slider">
+                      <div class="product__slider_img"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="product__slider_image"></div>
+                      <div class="product__slider_thumbnail clearfix">
+                        <ul class="slider__thumbnail_list">
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_1.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_2.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_2.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_3.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_3.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__vendor">Артикул<span class="product__vendor_number">123456</span></div>
+                  </div>
+                  <div class="product__desc">
+                    <div class="product__desc_title">Nokia Lumia 930</div>
+                    <ul class="product__desc_text">
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Тип SIM-карты</div>
+                        <div class="product__desc_right">Micro-SIM</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Количество SIM-карт</div>
+                        <div class="product__desc_right">2</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Цвет Черный</div>
+                        <div class="product__desc_right">Черный</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">ОC </div>
+                        <div class="product__desc_right">Windows Phone</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Связь 3G</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">4G (LTE)</div>
+                        <div class="product__desc_right">Нет</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">GPS-модуль</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                    </ul>
+                    <ul class="product__desc_rating">
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item"></li>
+                    </ul><span class="product__desc_rating_number">4</span>
+                  </div>
+                  <div class="product__price">
+                    <div class="product__price_price">24 000<span class="rub">m</span></div>
+                    <div class="product__price_shop">
+                      <button class="button__shop">В корзину</button>
+                      <div class="in_stock">В наличии</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item clearfix">
+                  <div class="left_column">
+                    <div class="product__slider">
+                      <div class="product__slider_img"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="product__slider_image"></div>
+                      <div class="product__slider_thumbnail clearfix">
+                        <ul class="slider__thumbnail_list">
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_1.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_2.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_2.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_3.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_3.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__vendor">Артикул<span class="product__vendor_number">123456</span></div>
+                  </div>
+                  <div class="product__desc">
+                    <div class="product__desc_title">Nokia Lumia 930</div>
+                    <ul class="product__desc_text">
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Тип SIM-карты</div>
+                        <div class="product__desc_right">Micro-SIM</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Количество SIM-карт</div>
+                        <div class="product__desc_right">2</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Цвет Черный</div>
+                        <div class="product__desc_right">Черный</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">ОC </div>
+                        <div class="product__desc_right">Windows Phone</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Связь 3G</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">4G (LTE)</div>
+                        <div class="product__desc_right">Нет</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">GPS-модуль</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                    </ul>
+                    <ul class="product__desc_rating">
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item"></li>
+                    </ul><span class="product__desc_rating_number">4</span>
+                  </div>
+                  <div class="product__price">
+                    <div class="product__price_price">24 000<span class="rub">m</span></div>
+                    <div class="product__price_shop">
+                      <button class="button__shop">В корзину</button>
+                      <div class="in_stock">В наличии</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item clearfix">
+                  <div class="left_column">
+                    <div class="product__slider">
+                      <div class="product__slider_img"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="product__slider_image"></div>
+                      <div class="product__slider_thumbnail clearfix">
+                        <ul class="slider__thumbnail_list">
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_1.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_2.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_2.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_3.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_3.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__vendor">Артикул<span class="product__vendor_number">123456</span></div>
+                  </div>
+                  <div class="product__desc">
+                    <div class="product__desc_title">Nokia Lumia 930</div>
+                    <ul class="product__desc_text">
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Тип SIM-карты</div>
+                        <div class="product__desc_right">Micro-SIM</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Количество SIM-карт</div>
+                        <div class="product__desc_right">2</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Цвет Черный</div>
+                        <div class="product__desc_right">Черный</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">ОC </div>
+                        <div class="product__desc_right">Windows Phone</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Связь 3G</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">4G (LTE)</div>
+                        <div class="product__desc_right">Нет</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">GPS-модуль</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                    </ul>
+                    <ul class="product__desc_rating">
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item"></li>
+                    </ul><span class="product__desc_rating_number">4</span>
+                  </div>
+                  <div class="product__price">
+                    <div class="product__price_price">24 000<span class="rub">m</span></div>
+                    <div class="product__price_shop">
+                      <button class="button__shop">В корзину</button>
+                      <div class="in_stock">В наличии</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item clearfix">
+                  <div class="left_column">
+                    <div class="product__slider">
+                      <div class="product__slider_img"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="product__slider_image"></div>
+                      <div class="product__slider_thumbnail clearfix">
+                        <ul class="slider__thumbnail_list">
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_1.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_1.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_2.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_2.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                          <li class="slider__thumbnail_item"><a href="pic/images/Lumia-930_3.jpg" class="slider__thumbnail_link"><img src="pic/images/Lumia-930_3.jpg" alt="Lumia-930" class="slider__thumbnail_img"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product__vendor">Артикул<span class="product__vendor_number">123456</span></div>
+                  </div>
+                  <div class="product__desc">
+                    <div class="product__desc_title">Nokia Lumia 930</div>
+                    <ul class="product__desc_text">
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Тип SIM-карты</div>
+                        <div class="product__desc_right">Micro-SIM</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Количество SIM-карт</div>
+                        <div class="product__desc_right">2</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Цвет Черный</div>
+                        <div class="product__desc_right">Черный</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">ОC </div>
+                        <div class="product__desc_right">Windows Phone</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">Связь 3G</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">4G (LTE)</div>
+                        <div class="product__desc_right">Нет</div>
+                      </li>
+                      <li class="product__desc_item">
+                        <div class="product__desc_left">GPS-модуль</div>
+                        <div class="product__desc_right">Есть</div>
+                      </li>
+                    </ul>
+                    <ul class="product__desc_rating">
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item desc__rating_item-active"></li>
+                      <li class="desc__rating_item"></li>
+                    </ul><span class="product__desc_rating_number">4</span>
+                  </div>
+                  <div class="product__price">
+                    <div class="product__price_price">24 000<span class="rub">m</span></div>
+                    <div class="product__price_shop">
+                      <button class="button__shop">В корзину</button>
+                      <div class="in_stock">В наличии</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pagination clearfix">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a href="#" class="pagination__link pagination__link_prev">&lt;</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link ">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link active ">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link ">3</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link pagination__link_next">&gt;</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <section class="sectionBottom">
+          <div class="bottom-text">
+            <div class="container clearfix">
+              <h4 class="bottom-text__title">Важная информация</h4>
+              <div class="container-multicolumn">
+                <p>
+                   
+                  Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+                </p>
+                <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                <p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+                <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container clearfix">
+          <div class="footer-top">
+            <div class="footer__logo"><a href="#" class="footer__logo_link"><img src="pic/cooltechfooter.png" alt="Логотип" class="footer__logo_img"></a></div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__social">
+              <ul class="footer__social_list">
+                <li class="footer__social_item"><a href="#" target="_blank" class="footer__social_link-fb footer__social_link"> fb</a></li>
+                <li class="footer__social_item"><a href="https://vk.com/ragnarokmetal" target="_blank" class="footer__social_link-vk footer__social_link"> vk</a></li>
+                <li class="footer__social_item"><a href="#" target="_blank" class="footer__social_link-tw footer__social_link"> tw</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__menu_list">
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Планшеты</a></li>
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Мобильные телефоны</a></li>
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Мр3 плееры</a></li>
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Персональные компьютера</a></li>
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Ноутбуки</a></li>
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Аксессуары</a></li>
+                <li class="footer__menu_item"><a href="#" class="footer__menu_link">Бытовая техника      </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="copyright__text">All rights reserved. 2015. no copy alowed</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./bower/jQuery/dist/jquery.min.js"></script>
+    <script src="./bower/jquery-ui/jquery-ui.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
